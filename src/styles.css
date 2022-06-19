@@ -1,0 +1,7 @@
+:root {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200px;
+  font-size: 12px;
+  --blue:rgb(91, 89, 94);
+  --white:#fff;
+}

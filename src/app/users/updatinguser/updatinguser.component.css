@@ -1,0 +1,9 @@
+.alignitems{
+  display: flex;
+  align-items: center;
+
+}
+textarea{
+ height: 100px;
+ min-width: 169px;
+}

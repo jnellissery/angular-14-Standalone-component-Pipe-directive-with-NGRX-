@@ -1,0 +1,11 @@
+<div style="padding:20px">
+  <label>Title :</label>{{ selectuser.title }}<br />
+  <label>Body :</label>{{ selectuser.body }}<br />
+  <div style="paddin-top:20px">
+    <button *ngIf="selectuser.id" (click)="Delete(selectuser.id)">
+      Delete
+    </button>
+    <button (click)="update()">Update</button>
+    <button (click)="back()">Back</button>
+  </div>
+</div>

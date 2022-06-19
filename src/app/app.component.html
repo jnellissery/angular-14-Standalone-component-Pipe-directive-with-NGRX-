@@ -1,0 +1,14 @@
+<header>MY Company</header>
+<section>
+  <nav>
+    <ul>
+      <li appUser [routerLink]="['/user']">
+        {{ 'Users' | userpipe }}
+      </li>
+      <li appUser [routerLink]="['/adduser']">Add User</li>
+    </ul>
+  </nav>
+  <input [(ngModel)]="title" />
+  {{ title }}
+  <router-outlet></router-outlet>
+</section>

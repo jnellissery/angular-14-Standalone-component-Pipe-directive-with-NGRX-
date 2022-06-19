@@ -1,0 +1,12 @@
+<form [formGroup]='fg'>
+<div style='padding:20px'>
+<label>Title</label>
+<input formControlName='title'><br/><br/>
+<div class="alignitems"> 
+<label for=txtarea>Body</label>
+<textarea id='txtarea' formControlName='body'></textarea>
+</div>
+</div>
+</form>
+<button (click)='updateuser()'>Update</button>
+<button (click)='cancel()'>Cancel</button>

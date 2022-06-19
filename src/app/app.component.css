@@ -1,0 +1,47 @@
+nav {
+  float: left;
+  width: 20%;
+  min-height: 500px; /* only for demonstration, should be removed */
+  background-color: #777;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  min-height: 20px;
+  text-align: left;
+}
+nav ul li:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  display: ;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+@media (max-width: 600px) {
+  nav,
+  article {
+    height: auto;
+  }
+}
+/* Clear floats after the columns */
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}

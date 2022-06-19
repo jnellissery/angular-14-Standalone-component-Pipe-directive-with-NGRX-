@@ -1,0 +1,17 @@
+<label> Add New Post</label><br/><br/>
+<form [formGroup]='fg'>
+Title <br/><input formControlName='title'><br/>
+<span  class='error' *ngIf= "fg.get('title').touched && fg.get('title').hasError('required')"> 
+This field is required
+</span>
+<br/><br/>
+Body <br/><textarea formControlName='body'></textarea><br/>
+<span  class='error' *ngIf= "fg.get('title').touched && (fg.get('body').hasError('required') ||
+fg.get('body').hasError('maxlength'))
+"> 
+This field is required
+</span>
+<br/><br/>
+<button [disabled]='fg.invalid'  (click)='post()'>Submit</button>
+<button (click)='navigateback()'>Cancel</button>
+</form>
