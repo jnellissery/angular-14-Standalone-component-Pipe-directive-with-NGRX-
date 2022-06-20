@@ -6,9 +6,15 @@
         {{ 'Users' | userpipe }}
       </li>
       <li appUser [routerLink]="['/adduser']">Add User</li>
+      <li appUser [routerLink]="['/dynamicform']">Dynamic Form</li>
     </ul>
   </nav>
-  <input [(ngModel)]="title" />
-  {{ title }}
+  <!--here checking angular 14 extended diagonistic -->
+  <!-- <input [(ngModel)]="title" />
+    {{ title??'testing' }} 
+  {{ title }} -->
+  <!-- <ng-container *ngIf="meta && data">
+  <app-dynamic-form [meta]="meta" [data]="data"></app-dynamic-form>
+ </ng-container> -->
   <router-outlet></router-outlet>
 </section>

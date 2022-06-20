@@ -14,6 +14,8 @@ import { StoreModule } from '@ngrx/store';
 import { UpdateuserComponent } from './app/users/updateuser/updateuser.component';
 import { AdduserComponent } from './app/users/adduser/adduser.component';
 import { UserPipe } from './app/pipes/user.pipe';
+import { DataService } from './app/data.service';
+import { MetaService } from './app/meta.service';
 const routes: Routes = [
   {
     path: 'user',
@@ -32,6 +34,10 @@ const routes: Routes = [
     component: UpdateuserComponent,
   },
   {
+    path:'dynamicform',
+    loadComponent:()=>import('./app/wrapper-dynamic/wrapper-dynamic.component').then(x=>x.WrapperDynamicComponent)
+  },
+  {
     path: 'updatinguser',
     loadComponent: () =>
       import('./app/users/updatinguser/updatinguser.component').then(
@@ -46,7 +52,7 @@ const routes: Routes = [
 ];
 bootstrapApplication(AppComponent, {
   providers: [
-    UserService,
+    UserService,DataService,MetaService,
     importProvidersFrom(
       HttpClientModule,
       ReactiveFormsModule,

@@ -1,0 +1,20 @@
+ 
+<div [ngSwitch]="control.controlType">
+  <app-label *ngSwitchCase="'label'" [meta]="control"></app-label>
+  <app-text-input
+    *ngSwitchCase="'textinput'"
+    [meta]="control"
+    [fg]="fg"
+  ></app-text-input>
+  <app-dropdown
+      *ngSwitchCase="'dropdown'"
+      [meta]="control"
+      [fg]="fg"
+    ></app-dropdown>
+    <app-checkbox
+      *ngSwitchCase="'checkbox'"
+      [meta]="control"
+      [fg]="fg"
+    ></app-checkbox>
+ </div>
+ 

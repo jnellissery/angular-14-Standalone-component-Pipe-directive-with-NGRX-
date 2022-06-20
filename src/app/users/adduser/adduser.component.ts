@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -9,7 +10,7 @@ import { addUserSuccessMsg } from '../../store/user.action';
   selector: 'app-adduser',
   templateUrl: './adduser.component.html',
   styleUrls: ['./adduser.component.css'],
-  imports: [ReactiveFormsModule ],
+  imports: [ReactiveFormsModule,CommonModule ],
   standalone: true,
 })
 export class AdduserComponent implements OnInit {
