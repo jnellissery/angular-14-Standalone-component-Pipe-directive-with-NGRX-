@@ -6,6 +6,7 @@ import { ControlBase } from './controls/control-base';
 import { DataService } from './data.service';
 import { UserDirective } from './directives/user.directive';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { DynamiccompService } from './dynamiccomp.service';
 import { MetaService } from './meta.service';
 import { UserPipe } from './pipes/user.pipe';
 
