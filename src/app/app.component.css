@@ -18,9 +18,9 @@ nav ul li {
 nav ul li:hover {
   background-color: var(--blue);
   color: var(--white);
-  display: ;
+  display: flex;
   cursor: pointer;
-  vertical-align: middle;
+  align-items: center;
 }
 
 article {
