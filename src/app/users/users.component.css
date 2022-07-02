@@ -15,4 +15,5 @@
 .column:hover {
   background-color: var(--blue);
   color: var(--white);
+  cursor: pointer;
 }

@@ -21,6 +21,7 @@ nav ul li:hover {
   display: flex;
   cursor: pointer;
   align-items: center;
+ 
 }
 
 article {
