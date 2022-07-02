@@ -4,9 +4,10 @@ import { Product } from '../DI-usefactory/product';
 
 @Injectable()
 export class ProductService {
-  constructor(private loggerservice: LoggerService) {}
-  public getProducts() {
+  constructor(private loggerservice: LoggerService) {
     this.loggerservice.log('Get Products');
+  }
+  public getProducts() {
     let products: Product[];
     products = [
       new Product(1, 'Memory Card', 500),

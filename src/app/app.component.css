@@ -14,14 +14,26 @@ nav ul {
 nav ul li {
   min-height: 20px;
   text-align: left;
+  display: flex;
 }
 nav ul li:hover {
   background-color: var(--blue);
   color: var(--white);
-  display: flex;
   cursor: pointer;
   align-items: center;
- 
+}
+
+nav ul li:focus {
+  background-color: var(--blue);
+  color: var(--white);
+  cursor: none;
+  align-items: center;
+}
+nav ul li:current {
+  background-color: var(--blue);
+  color: var(--white);
+  cursor: none;
+  align-items: center;
 }
 
 article {

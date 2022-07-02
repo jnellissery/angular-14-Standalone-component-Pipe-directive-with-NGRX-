@@ -52,7 +52,7 @@ const routes: Routes = [
     component:ProductsComponent,
     providers:[
       {provide: LoggerService, useClass: LoggerService },
-      { provide: 'USE_FAKE', useValue: true },
+      { provide: 'USE_FAKE', useValue: false },
       {   provide: 'FUNC',
           useValue: () => {return 'hello';}},
       {

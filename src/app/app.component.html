@@ -2,14 +2,15 @@
 <section>
   <nav>
     <ul>
-      <li appUser [routerLink]="['/user']">
+      <li [routerLink]="['/user']" >
         {{ 'Users' | userpipe }}
       </li>
-      <li appUser [routerLink]="['/adduser']">Add User</li>
-      <li appUser [routerLink]="['/dynamiccomp']">Dynamic Component</li>
-      <li appUser [routerLink]="['/dynamicform']">Dynamic Form</li>
-      <li appUser [routerLink]="['/experimentaluser']">Experimental Users</li><br/>
-      <li appUser [routerLink]="['/products']">DI Use Factory</li>
+      <li [routerLink]="['/adduser']">Add User</li>
+      <li [routerLink]="['/dynamiccomp']">Dynamic Component</li>
+      <li [routerLink]="['/dynamicform']">Dynamic Form</li>
+      <li [routerLink]="['/experimentaluser']">Experimental Users</li>
+      <br />
+      <li [routerLink]="['/products']">DI Use Factory</li>
     </ul>
   </nav>
   <!--here checking angular 14 extended diagonistic -->
@@ -19,6 +20,6 @@
   <!-- <ng-container *ngIf="meta && data">
   <app-dynamic-form [meta]="meta" [data]="data"></app-dynamic-form>
  </ng-container> -->
- 
+
   <router-outlet></router-outlet>
 </section>
