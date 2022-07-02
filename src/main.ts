@@ -66,7 +66,7 @@ const routes: Routes = [
 
   {
     path: 'home',
-    component: HelloComponent,
+    component: UsersComponent,
   },
   {
     path: 'adduser',
